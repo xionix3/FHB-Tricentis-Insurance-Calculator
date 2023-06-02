@@ -34,7 +34,6 @@ export const config = {
     capabilities: [
         {
             "browserName": userConfig.cloudDevices.browser.browserName,
-            "browserVersion": userConfig.cloudDevices.browser.browserVersion,
             "headspin:initialScreenSize": {
                 "width": 1920,
                 "height": 1080
