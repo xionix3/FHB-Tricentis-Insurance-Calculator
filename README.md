@@ -19,7 +19,7 @@ To get started with the project you need to install the following components:
     * https://code.visualstudio.com/download
 * Installation Android Studio
     * https://developer.android.com/studio
-*Installation Git
+* Installation Git
     * https://git-scm.com/downloads
 * Installation node.js
     * https://nodejs.org/en/download
