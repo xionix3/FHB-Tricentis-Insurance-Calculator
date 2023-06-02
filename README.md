@@ -137,11 +137,26 @@ Create a file called "userConfig.js" in the root directory of the project with t
 const userConfig = {
     localDevices: {
         androidEmulatorUdid: "emulator-5554"
+    },
+    cloudDevices: {
+        androidDeviceUdid: "<Select the udid of a headspin Android device>",
+        iOSDeviceUdid: "<Select the udid of a headspin iOS device>",
+        browser: {
+            browserName: "chrome"
+        }
+    },
+    headspinHostConfig: {
+        protocol: "https",
+        hostname : "appium-dev.headspin.io",
+        port : 443,
+        path : "/v0/<your api token>/wd/hub",
     }
 }
 
 export default userConfig
 ```
+
+To automate on devices running on Headspin, you need to configure the API token. You can find your individual API token within the user settings section of the platform.
 
 ### Run the debug configurations
 
