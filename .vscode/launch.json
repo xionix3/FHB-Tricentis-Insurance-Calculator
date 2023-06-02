@@ -1,0 +1,83 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cloud: Debug iOS tests",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceFolder}/src/config/cloud/wdio.ios.app.conf.js", "--suite", "mobileIOS"],
+            "cwd": "${workspaceFolder}",
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
+        },
+        {
+            "name": "Cloud: Debug Android tests",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceFolder}/src/config/cloud/wdio.android.app.conf.js", "--suite", "mobileAndroid"],
+            "cwd": "${workspaceFolder}",
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
+        },
+        {
+            "name": "Cloud: Debug Web tests",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceFolder}/src/config/cloud/wdio.web.conf.js", "--suite", "web"],
+            "cwd": "${workspaceFolder}",
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
+        },
+        {
+            "name": "Local: Debug Web tests",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceFolder}/src/config/local/wdio.web.conf.js", "--suite", "web"],
+            "cwd": "${workspaceFolder}",
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
+        },
+        {
+            "name": "Local: Debug Android tests",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceFolder}/src/config/local/wdio.android.app.conf.js", "--suite", "mobileAndroid"],
+            "cwd": "${workspaceFolder}",
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
+        },
+    ]
+}
