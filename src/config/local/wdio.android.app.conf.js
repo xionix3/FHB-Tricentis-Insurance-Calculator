@@ -44,7 +44,7 @@ export const config = {
 
     hostname : "127.0.0.1",
     port : 4723,
-    services: ['appium'],
+    //services: ['appium'],
       
     // If you run your tests on Sauce Labs you can specify the region you want to run your tests
     // in via the `region` property. Available short handles for regions are `us` (default) and `eu`.
