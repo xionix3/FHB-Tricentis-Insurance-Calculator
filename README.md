@@ -76,6 +76,29 @@ emulator-5554	device
 
 In this example, "emulator-5554" is the udid of the Android emulator. You will need to id to configure your automation project.
 
+### Install Selenium
+
+#### Install Selenium Server
+To install Selenium, use the following command:
+
+```bash
+npm install selenium-standalone -g  
+```
+This will install Selenium globally for you.
+
+#### Install drivers
+
+To automate browsers with Selenium, you need to install drivers for Chrome, Firefox, Edge, etc. To install those drivers, run the following command:
+
+```bash
+selenium-standalone install   
+```
+You can start Selenium with the following command:
+
+```bash
+selenium-standalone start
+```
+
 ### Install Appium
 
 #### Install Appium Server
@@ -95,7 +118,7 @@ appium driver install uiautomator2
 ```
 #### Test your Appium Installation
 
-You can start appium with the following command:
+You can start Appium with the following command:
 
 ```bash
 appium   
