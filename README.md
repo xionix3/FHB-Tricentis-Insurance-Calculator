@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an example project automating the Tricentis Insurance Calculator app. Is uses the [WebdriverIO](https://webdriver.io/) to automate the insurance calculator app on the following platforms:
+This is an example project automating the Tricentis Insurance Calculator app. Is uses [WebdriverIO](https://webdriver.io/) to automate the Tricentis insurance calculator app on the following platforms:
 * Android
 * iOS
 * Web
