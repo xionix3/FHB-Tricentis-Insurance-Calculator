@@ -11,7 +11,9 @@ describe("Insurance Calculator Web: End to End", () => {
 
     before(async () => {
         // Initialize primary navigation
+        await browser.setWindowSize(1920, 1080)
         await browser.url("http://sampleapp.tricentis.com");
+
 
         primaryNavigation = new PrimaryNavigation(browser);
         await primaryNavigation.init();
