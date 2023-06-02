@@ -7,7 +7,6 @@ import Makes from "../constants/makes.js";
 import DatePickerWheel from "../pages/mobile/ios/controls/datePickerWheel.js";
 import PersonDataPage from "../pages/mobile/ios/personData.js";
 import ProductDetailsPage from "../pages/mobile/ios/productDetails.js";
-import QuotePage from "../pages/mobile/ios/quote.js";
 
 describe("Insurance Calculator iOS: End to End", () => {
     let primaryNavigation;
