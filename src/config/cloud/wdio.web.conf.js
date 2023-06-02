@@ -37,7 +37,8 @@ export const config = {
             "headspin:initialScreenSize": {
                 "width": 1920,
                 "height": 1080
-            }
+            },
+            "headspin:newCommandTimeout": 120
         }
     ],
 

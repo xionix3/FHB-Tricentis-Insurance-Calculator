@@ -38,7 +38,8 @@ export const config = {
             "appium:bundleId": "com.tricentis.Insurance-Calculator",
             "appium:udid": userConfig.cloudDevices.iOSDeviceUdid,
             "appium:automationName": "XCUITest",
-            "appium:newCommandTimeout": 60
+            "appium:newCommandTimeout": 60,
+            "headspin:newCommandTimeout": 120
         }
     ],
 

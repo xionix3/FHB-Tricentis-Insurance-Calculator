@@ -38,7 +38,8 @@ export const config = {
             "appium:automationName": "UiAutomator2",
             "appium:appPackage": "com.tricentis.insuranceCalculatorApp",
             "appium:appActivity": "com.tricentis.mobile.MainActivity",
-            "appium:udid": userConfig.cloudDevices.androidDeviceUdid
+            "appium:udid": userConfig.cloudDevices.androidDeviceUdid,
+            "headspin:newCommandTimeout": 120
         }
     ],
 
