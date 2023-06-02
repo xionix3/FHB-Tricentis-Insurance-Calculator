@@ -30,9 +30,9 @@ export const config = {
     key:  'xxxxxxxxxxxxxxxx-xxxxxx-xxxxx-xxxxxxxxx',
 
 
-    services: [
-        ['selenium-standalone', { drivers: { firefox: '0.33.0', chrome: true, chromiumedge: 'latest' } }]
-    ],
+    //services: [
+    //    ['selenium-standalone', { drivers: { firefox: '0.33.0', chrome: true, chromiumedge: 'latest' } }]
+    //],
 
     capabilities: [
         {
@@ -42,6 +42,7 @@ export const config = {
 
     hostname : "127.0.0.1",
     port : 4444,
+    path: "/wd/hub",
       
     // If you run your tests on Sauce Labs you can specify the region you want to run your tests
     // in via the `region` property. Available short handles for regions are `us` (default) and `eu`.
