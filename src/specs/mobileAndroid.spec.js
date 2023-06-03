@@ -62,9 +62,14 @@ describe("Insurance Calculator Android: End to End", () => {
         // TODO - Insert values in person data page
 
         // Navigate to person data page
-        //primaryNavigation.personDataNavButton.click();
-        //const personDataPage = new PersonDataPage(driver);
-        //await personDataPage.init();
+        primaryNavigation.personDataNavButton.click();
+        const personDataPage = new PersonDataPage(driver);
+        await personDataPage.init();
+
+        await personDataPage.firstName.setValue("Patrick");
+        await personDataPage.lastName.setValue("Schlögl");
+        await personDataPage.dateOfBirth.setValue("06.12.1986");
+        await personDataPage.genderMale.click();
 
     });
 

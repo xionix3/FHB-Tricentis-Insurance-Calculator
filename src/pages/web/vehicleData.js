@@ -6,9 +6,10 @@ export default class VehicleDataPage {
     numberOfSeats;
     fuelType;
     listPrice;
-    licensePlateNumber;
     annualMileage;
-    nextButton;
+    payload;
+    totalweight;
+    
 
     constructor(browser) {
         this.#browser = browser;
@@ -20,8 +21,10 @@ export default class VehicleDataPage {
         this.dateOfManufacture = this.#browser.$("#dateofmanufacture");
         this.numberOfSeats = this.#browser.$("#numberofseats");
         this.fuelType = this.#browser.$("#fuel");
+        this.payload = this.#browser.$("#payload");
+        this.totalweight = this.#browser.$("#totalweight");
         this.listPrice = this.#browser.$("#listprice");
-        this.licensePlateNumber = this.#browser.$("#licenseplatenumber");
-        this.annualMileage = this.#browser.$("#annualmileage");
+        this.annualMileage = this.#browser.$("#annualmileage");  
+
     }
 }

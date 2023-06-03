@@ -15,10 +15,9 @@ export default class ProductDataPage {
     async init () {
         this.startDate = this.#browser.$("#startdate");
         this.insuranceSum = this.#browser.$("#insurancesum");
-        this.meritRating = this.#browser.$("#meritrating");
         this.damageInsurance = this.#browser.$("#damageinsurance")
         this.euroProtection = this.#browser.$("#EuroProtection").nextElement();
-        this.legalDefenseInsurance = this.#browser.$("#LegalDefenseInsurance").nextElement();;
-        this.courtesyCar = this.#browser.$("#courtesycar");
+        this.legalDefenseInsurance = this.#browser.$("#LegalDefenseInsurance").nextElement();
+        
     }
 }

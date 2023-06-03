@@ -5,6 +5,7 @@ export default class PersonDataPage {
     dateOfBirth;
     genderMale;
     genderFemale;
+    
 
     constructor(driver) {
         this.#driver = driver;
@@ -12,13 +13,11 @@ export default class PersonDataPage {
 
     async init () {
         // TODO Add locators for person data page elements
-
-        /*
-        this.firstName = await this.#driver.$('');
-        this.lastName = await this.#driver.$('');
-        this.dateOfBirth = await this.#driver.$('');
-        this.genderMale = await this.#driver.$('');
-        this.genderFemale = await this.#driver.$('');
-        */
+        
+        this.firstName = await this.#driver.$('id=com.tricentis.insuranceCalculatorApp:id/firstnameTextfield');
+        this.lastName = await this.#driver.$('id=com.tricentis.insuranceCalculatorApp:id/lastnameTextfield');
+        this.dateOfBirth = await this.#driver.$('id=com.tricentis.insuranceCalculatorApp:id/dobTextfield');
+        this.genderMale = await this.#driver.$('id=com.tricentis.insuranceCalculatorApp:id/gender_male');
+        this.genderFemale = await this.#driver.$('id=com.tricentis.insuranceCalculatorApp:id/gender_female');
     }
 }

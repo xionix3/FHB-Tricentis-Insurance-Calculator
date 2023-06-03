@@ -10,6 +10,7 @@ export default class InsurantDataPage {
     zipCode;
     city;
     occupation;
+    hobbiesSpeeding;
 
 
     constructor(browser) {
@@ -17,19 +18,18 @@ export default class InsurantDataPage {
     }
 
     async init () {
-        // TODO - Add locators
-        /*
-        this.firstName = this.#browser.$("");
-        this.lastName = this.#browser.$("");
-        this.dateOfBirth = this.#browser.$("");
-        this.genderMale = this.#browser.$("");
-        this.genderFemale = this.#browser.$("");
-        this.streetAddress = this.#browser.$("");
-        this.country = this.#browser.$("");
-        this.zipCode = this.#browser.$("");
-        this.city = this.#browser.$("");
-        this.occupation = this.#browser.$("");
-        this.hobbiesSpeeding = this.#browser.$("");
-        */
+        
+        this.firstName = this.#browser.$("#firstname");
+        this.lastName = this.#browser.$("#lastname");
+        this.dateOfBirth = this.#browser.$("#birthdate");
+        this.genderMale = this.#browser.$("#gendermale").nextElement();
+        this.genderFemale = this.#browser.$("#genderfemale").nextElement();
+        this.streetAddress = this.#browser.$("#streetaddress");
+        this.country = this.#browser.$("#country");
+        this.zipCode = this.#browser.$("#zipcode");
+        this.city = this.#browser.$("#city");
+        this.occupation = this.#browser.$("#occupation");
+        this.hobbiesSpeeding = this.#browser.$("#speeding").nextElement();
+        
     }
 }
