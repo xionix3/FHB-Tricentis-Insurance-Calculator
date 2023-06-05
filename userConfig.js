@@ -4,7 +4,7 @@ const userConfig = {
     },
     cloudDevices: {
         androidDeviceUdid: "RF8N91W5LVX",
-        iOSDeviceUdid: "e3c5ebfc1e2945b0e5c1e253c87b70c5704792eb",
+        iOSDeviceUdid: "",
         browser: {
             browserName: "chrome"
         }
@@ -13,7 +13,7 @@ const userConfig = {
         protocol: "https",
         hostname : "appium-dev.headspin.io",
         port : 443,
-        path : "/v0/9614adc7ebd54456bd5ed099b40e63b0/wd/hub",
+        path : "/v0/9dbc808ebc7c4fcf91b1c32f56a68661/wd/hub",
     }
 }
 

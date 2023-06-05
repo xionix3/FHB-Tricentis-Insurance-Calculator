@@ -1,0 +1,22 @@
+name: Test-Headspin
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: npm ci
+      - name: Set up HeadSpin
+        run: |
+          echo "HEADSPIN_API_TOKEN=${{ secrets.HEADSPIN_API_TOKEN }}" >> $GITHUB_ENV
+          echo "HEADSPIN_DEVICE_ID=${{ secrets.HEADSPIN_DEVICE_ID }}" >> $GITHUB_ENV
+      - name: Run Web tests on HeadSpin
+        run: npm test
