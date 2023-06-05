@@ -20,3 +20,7 @@ All rights -> [HERE](Tricentis-Tutorial.md)
 #### Web UI Tests lokal ausführen  
 #### Web UI Tests in der Cloud auf headspin.io ausführen  
 #### Eine Pipeline mit github actions bauen die, die Tests manuell oder automatisch auf headspin.io durchführt  
+
+
+
+<!--Generete PDF from README.md => pip install grip, grip README.md-->
