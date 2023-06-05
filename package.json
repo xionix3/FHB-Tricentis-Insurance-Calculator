@@ -10,8 +10,6 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-  },
-  "devDependencies": {
     "@wdio/allure-reporter": "^8.10.7",
     "@wdio/appium-service": "^8.10.5",
     "@wdio/cli": "^8.10.5",
