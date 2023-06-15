@@ -24,7 +24,7 @@ it("Testlanding page", async() => {
     await primaryNavigation.branding_Logo.click();
 }); 
 ````  
-Danach wurden die folgenden Dateien vervollständigt bzw. implementiert:
+Danach wurden die folgenden Dateien vervollständigt bzw. implementiert:  
 [insurantData.js](/src/pages/web/insurantData.js)    
 [productData.js](/src/pages/web/productData.js)  
 
@@ -32,7 +32,7 @@ und die folgenden Dateien für durchführung des Trucks angepasst:
 [vehicleData.js](/src/pages/web/vehicleData.js)  
 
 Außerdem musste noch die Navigation entsprechend angepasst werden um im Test auf die Truckseite nagivieren zu können:  
-[web.spec.js]()  
+[web.spec.js](/src/specs/web.spec.js)  
 ````ruby
 it("Navigate to vehicle data section", async() => {
     await primaryNavigation.truckNavButton.click();
